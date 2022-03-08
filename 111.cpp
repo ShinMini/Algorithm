@@ -18,5 +18,6 @@ int main(){
             if(N%i==0) break;   // 소수가 아닌 경우, 
         }
     }
+    (count !=0)?cout << count << "\n" << min : cout << -1;
     return 0;
 }
