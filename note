@@ -78,3 +78,37 @@ strncat(str, "piece", 3);  // adding 3 strings to str array
 // 중간 결론, 아무래도 string 즉, char[] 형식의 array 는 pointer 형식으로 접근, 
 // 초기 주소값을 찾고, 배열 중간에 있는 개행문자(\n) 또는 null (\n) value 등 
 // event 를 중심으로 접근해 algorithm을 풀어나가는 방식이 접근법이라고 생각한다. 
+
+precautions for using strcat function !!!
+
+strcat function can invade(침범하다) memory when used.
+// strcat 함수는 문자열을 덧붙이는 것이므로 붙여넣기가 되는 배열의 크기가 충분히 커야합니다.
+strcat 함수는 붙여넣을 공간의 주소를 증가시키므로 공간이 부족한 경우 할당하지 않은 다른 메모리 영역을 invade 할 수 있습니다. 
+this problem is when do compiling can not find problem, we can find problem running program after finished compile
+
+when using strcat function need to optimizing array !!!
+
+strcat 함수로 붙여넣기 ㅈ너에 먼저 널 문자의 위치를 찾으므로 반드시 초기화를 해야합니다. 
+배열이 초기화되지 않으면, 쓰레기 값의 중간부터 붙여넣을 가능성이 큽니다. 
+
+배열 초기화 방법
+1. char str[80] = {'\0'};  // 명시적으로 널 문자를 초기화 
+2. char str[80] = {0};// 널 문자의 아스키코드 값으로 초기화 
+3. char str[80] = "";//  큰 따옴표 안에 아무것도 없으므로 널 문자만 초기화 
+4. char str[80] = '\0';// 첫 번째 요소만 별도로 초기화 
+
+
+문자열 길이를 계산하는 strlen 함수
+문자열을 저장하는  char 배열은 다양한 길이의 문자열을 저장할 수 있도로 충분히 크게 선언해서 사용합니다.
+따라서 배열에 저장된 문자열의 길이는 배열의 크기와 다를 수 있습니다. 
+so length of strings in array can different with size of array
+만약 배열에 저장된 문자열의 실제 길이를 알고 싶으면 strlen 함수를 사용합니다. 
+ex) strlen(str)
+
+
+strlen 함수는 배열에 저장된 문자열에서 널 문자가 나올 때까지 문자 수를 세어 반환합니다. 
+따라서 배열의 크기와는 상관없이 실제 저장된 문자열의 길이를 확인할 수 있습니다. 
+문자열의 길이를 반환하므로 반환갑을 바로 비교하거나 수식의 일부로 사용할 수 있음. 
+
+문자열을 비교하는 strcmp, strncmp
+
