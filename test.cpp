@@ -1,33 +1,27 @@
-#include <iostream>
-#include <cmath>
-#include <vector>
+#include <stdio.h>
+#include <string.h>
 
-using namespace std;
+int main(void)
+{
+   char str1[80] = "stawberry";// char 배열에 문자열 초기화
+   char str2[80] = "apple";// char 배열에 문자열 초기화
 
-int main(){
-    int N, total;
-    cin >> N >> total;
+   char * ps1 = "banana";  // 포인터로 문자열 상수 연결.
+   char * ps2 = str2;  // 포인터로 배열 연결.
 
-    vector<int> nums (N);
-    for(int i=0; i<N; i++){
-        cin >> nums.at(i);
-    }
+   printf(" 최초 문자열 : %s\n", str1);
+   strcpy(str1, str2);        // 다른 char 배열의 문자열 복사.
+   printf(" 바뀐 문자열 : %s\n", str1);
 
-    // 5개의 카드중 3장의 카드를 사용해 만들 수 있는 조합의 경우의 수, 
-    // 5C3
-    int caseIndex = (N * N-1 * N-2) / 6; //  번 반복해주면 된다. 5의 경우, caseIndex = 10 가지 , 
-    vector<int> caseArr(caseIndex); 
+   strcpy(str1, ps1);        // 문자열 상수를 연결한 포인터 사용
+   printf(" 바뀐 문자열 : %s\n", str1);
 
-    for(int i=0; i<N; i++){
-        for(int k=i+1; k<N-1; k++){
-            for(int t = k+1; t<N-2; t++){
-                caseArr.push_back(nums.at(i) + nums.at(k) + nums.at(t));
-            }}}
+   strcpy(str1, ps2);        // 배열을 연결한 포인터 사용
+   printf(" 바뀐 문자열 : %s\n", str1);
 
-    for(int c : caseArr){
+   strcpy(str1, "banana");        // 문자열 상수 사용
+   printf(" 바뀐 문자열 : %s\n", str1);
 
-        cout << c << " ";
-    }
 
-    return 0;
+   return 0;
 }
