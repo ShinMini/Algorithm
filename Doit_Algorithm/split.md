@@ -1,3 +1,4 @@
+``` cpp 
 #include <vector>
 #include <iostream>
 #include <bitset>
@@ -7,10 +8,7 @@ using namespace std;
 // std::string::nops => -1을 가지는 상수
 
 int main() {
-<<<<<<< HEAD
-=======
     ios_base::sync_with_stdio(false); cin.tie(0);
->>>>>>> 0a8932dc325dc96837fa7bb06808877c190356d5
 
     std::string s = "hello mini is it good?";
     std::string delimiter = " "; 
@@ -64,3 +62,4 @@ int main()
 }
 
 */
+```

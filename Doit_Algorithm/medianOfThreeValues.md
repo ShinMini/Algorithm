@@ -1,3 +1,4 @@
+``` cpp  
 #include <stdio.h>
 
 // 세 값의 중앙값을 구해보자 .
@@ -27,3 +28,4 @@ int main(void)
     printf("median vlaue:  %d \n", median);
     return 0;
 }
+```
