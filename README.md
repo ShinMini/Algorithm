@@ -1,4 +1,3 @@
-
 # [The Art of Computer Programming](../../README.md)
 
 ## 파인만 알고리즘
