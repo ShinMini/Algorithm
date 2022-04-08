@@ -23,6 +23,15 @@
 
 ## [22| 04/06 - 딥러닝과 머신러닝이란,] (./TLI/22_04_06/220406.md)
 
+---
+
 # Basic of Programming 
 
-## [C언어 기초함수의 구성 연습과 이해] (./Doit_Algorithm)
+## [C언어 기초함수의 구성 연습과 이해] (./Doit_Algorithm/Doit.md)
+
+--- 
+ 
+# Practice Algorithm with BeakJun site
+
+## [백준 문제풀이] (./Beak_solved)
+
