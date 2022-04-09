@@ -1,0 +1,3 @@
+# don't upload exe file
+*.exe
+test*
