@@ -21,15 +21,17 @@
 # Machine learning
 
 ## [22| 04/06 - 딥러닝과 머신러닝이란,](./TLI/22_04_06/220406.md)
+## [22| 04/07 - 경사하강법 선형함수, 학습법에 대해](./TLI/22_04_07/220407.md)
 
 ---
 
 # Basic of Programming 
 
 ## [C언어 기초함수의 구성 연습과 이해](./Doit_Algorithm/Doit.md)
+## [정처기 이론 공부 part.1](./TLI/22_04_08/Doit.md)
 
---- 
- 
+---
+
 # Practice Algorithm with BeakJun site
 
 ## [백준 문제풀이](./Beak_solved)
