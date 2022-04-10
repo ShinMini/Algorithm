@@ -28,7 +28,7 @@
 # Basic of Programming 
 
 ## [C언어 기초함수의 구성 연습과 이해](./Doit_Algorithm/Doit.md)
-## [정처기 이론 공부 part.1](./TLI/22_04_08/Doit.md)
+## [22| 04/08 - 정처기 이론 공부 part.1](./TLI/22_04_08/Doit.md)
 
 ---
 
